@@ -16,11 +16,15 @@
 
 * You can find out the description about these columns in data_description file.
 
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Dataset.png" width=800>
+
 ---
 
 ## Feature Engineering:
 ### A. Handling Missing Values:
 * Here, there several columns that has higher NULL values.
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Missing.png" width=600>
+
 * so, I have dropped those columns that has more than 10% NULL values.
 * In **Categorical Columns** I have replaced NULL value with **"Missing"** word.
 * In **Numerical Columns** I have replaced NULL values with the **Mean** of that perticular Column.
@@ -48,18 +52,38 @@
 ### 1. RandomForestRegressor:
 * **RandomForestRegressor** has been applied with **Hyperparameter-tuning**.
 * **Results for RandomForestRegressor:**
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/RFR1.png" width=600>
+
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/RFR2.png" width=600>
+
 
 ### 2. Linear Regression:
 * **Results for Linear Regression:**
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Lin1.png" width=600>
+
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Lin2.png" width=600>
+
 
 ### 3. SVR:
 * **Results for SVR:**
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/SVR1.png" width=600>
+
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/SVR2.png" width=600>
+
 
 ### 4. GradientBoostingRegressor:
 * **Results for GradientBoostingRegressor:**
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/GBR1.png" width=600>
+
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/GBR2.png" width=600>
+
 
 ### 4. ANN:
 * **Results for ANN:**
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/ANN1.png" width=600>
+
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/ANN2.png" width=600>
+
 
 
 
