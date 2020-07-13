@@ -33,10 +33,10 @@
 * To understand it in more detail go to **[House-Price-Prediction.ipynb](https://github.com/manthanpatel98/House-Price-Prediction/blob/master/House-Price-Prediction.ipynb)**
 
 ### A. Handling Missing Values:
-* Here, there several columns that has higher NULL values.
+* Here, there are several columns that has higher NULL values.
 <img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Missing.png" width=500>
 
-* So, I have dropped those columns that has more than 10% NULL values.
+* So, I have dropped those columns that have more than 10% NULL values.
 * In **Categorical Columns**, I have replaced NULL value with **"Missing"** word.
 * In **Numerical Columns**, I have replaced NULL values with the **Mean** of that perticular Column.
 
