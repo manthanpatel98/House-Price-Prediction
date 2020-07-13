@@ -5,10 +5,19 @@
 
 ---
 
+## Overview:
+* This is a Kaggle Competition Project.
+* **Train** and **Test** Dataset has almost same no. of columns and rows **(1460,81)**.
+* Various Techniques like **Target Guided Encoding**, **logarithmic transformation technique**, **StandardScaler**. **Hyperparameter-tuning** etc. has been used.
+* Algorithms like **RandomForestRegressor**, **Linear Regression**, **SVR**, **GradientBoostingRegressor** and **ANN** has been applied.
+
+---
+
 ## Data Gathering:
 * This is a Kaggle Competition Project. 
 
 * **Dataset:** https://www.kaggle.com/c/house-prices-advanced-regression-techniques 
+
 ### Dataset:
 * **Train** and **Test** Dataset has almost same no. of columns and rows **(1460,81)**.  
 * **Dataset has 81 columns:**
@@ -21,13 +30,15 @@
 ---
 
 ## Feature Engineering:
+* To understand it in more detail go to **[House-Price-Prediction.ipynb](https://github.com/manthanpatel98/House-Price-Prediction/blob/master/House-Price-Prediction.ipynb)**
+
 ### A. Handling Missing Values:
 * Here, there several columns that has higher NULL values.
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Missing.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Missing.png" width=500>
 
-* so, I have dropped those columns that has more than 10% NULL values.
-* In **Categorical Columns** I have replaced NULL value with **"Missing"** word.
-* In **Numerical Columns** I have replaced NULL values with the **Mean** of that perticular Column.
+* So, I have dropped those columns that has more than 10% NULL values.
+* In **Categorical Columns**, I have replaced NULL value with **"Missing"** word.
+* In **Numerical Columns**, I have replaced NULL values with the **Mean** of that perticular Column.
 
 ### B. Feature Encoding:
 * Here, I have used **Target Guided Encoding**.
@@ -35,10 +46,10 @@
 
 ### C. Feature Transformation:
 * In the Dataset, there are several columns like **'LotArea'**, **'1stFlrSF'**, **'GrLivArea'**,**'SalePrice'** that are not Gaussian Distributed.
-* For that **Logarithmic Technique** of converting distribution into Gaussian has been used.
+* For that **Logarithmic Technique** of converting distribution into **Gaussian Distribution** has been used.
 
 ### D. Feature Scaling:
-* For Scaling, **StandardScaler** has been used.
+* For Scaling, **StandardScaler** has been applied.
 
 ---
 
@@ -52,38 +63,54 @@
 ### 1. RandomForestRegressor:
 * **RandomForestRegressor** has been applied with **Hyperparameter-tuning**.
 * **Results for RandomForestRegressor:**
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/RFR1.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/RFR1.png" width=500>
 
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/RFR2.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/RFR2.png" width=500>
 
 
 ### 2. Linear Regression:
 * **Results for Linear Regression:**
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Lin1.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Lin1.png" width=500>
 
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Lin2.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/Lin2.png" width=500>
 
 
 ### 3. SVR:
 * **Results for SVR:**
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/SVR1.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/SVR1.png" width=500>
 
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/SVR2.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/SVR2.png" width=500>
 
 
 ### 4. GradientBoostingRegressor:
 * **Results for GradientBoostingRegressor:**
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/GBR1.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/GBR1.png" width=500>
 
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/GBR2.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/GBR2.png" width=500>
 
 
 ### 4. ANN:
 * **Results for ANN:**
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/ANN1.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/ANN1.png" width=500>
 
-<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/ANN2.png" width=600>
+<img src="https://github.com/manthanpatel98/House-Price-Prediction/blob/master/README-Resources/ANN2.png" width=500>
 
+---
+
+### Algorithm & R2 Score:
+
+| Algorithm | R2 Score |
+| ---- | ---- |
+| RandomForestRegressor | -0.08 |
+| Linear Regression | 0.09 |
+| SVR | 0.15 |
+| GradientBoostingRegressor | 0.15 |
+| ANN | 0.24 |
+
+* Here, Our model is not ideally fitted but it gives good results.
+* Among all Algorithms discussed, **ANN** has given better results as compare to other algorithms.
+
+---
 
 
 
